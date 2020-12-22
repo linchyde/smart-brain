@@ -28,7 +28,7 @@ app.use(bodyParser.json());
 app.use(cors());
 
 app.get("/", (req, res) => {
-  res.send("success");
+  res.send("it is working");
 });
 // below is for the signin using bcrypt (will be used with the setup of database) to check against user passwords
 app.post("/signin", signin.handleSignin(db, bcrypt));
